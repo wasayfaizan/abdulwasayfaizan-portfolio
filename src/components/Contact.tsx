@@ -24,12 +24,12 @@ const Contact = () => {
 
         <div className="mt-12 grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
-          <div className="glass-card rounded-[22px] p-8 shadow-xl animate-fade-card">
+          <div className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card">
             <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
             
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="flex items-center gap-4 transition-transform hover:translate-x-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -43,8 +43,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="flex items-center gap-4 transition-transform hover:translate-x-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20">
                   <Linkedin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -60,8 +60,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="flex items-center gap-4 transition-transform hover:translate-x-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20">
                   <Github className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -85,7 +85,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card rounded-[22px] p-8 shadow-xl animate-fade-card" style={{ animationDelay: "0.1s" }}>
+          <div className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -114,7 +114,7 @@ const Contact = () => {
               </div>
               <Button
                 type="submit"
-                className="w-full font-bold bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg transition-all hover:scale-105"
+                className="w-full font-bold bg-gradient-to-r from-primary to-primary-dark btn-hover"
                 size="lg"
               >
                 <Send className="mr-2 w-4 h-4" />

@@ -45,10 +45,10 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card"
+              className="glass-card skill-card rounded-[22px] p-8 shadow-xl animate-fade-card border-l-4 border-primary/20 hover:border-primary"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center gap-4 mb-4">
+              <div className="flex items-center gap-4 mb-4 transition-transform hover:scale-105">
                 {category.icon}
                 <h4 className="text-xl font-bold text-foreground">{category.title}</h4>
               </div>

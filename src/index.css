@@ -159,17 +159,84 @@ All colors MUST be HSL.
   }
 
   .glass-card-hover {
-    transition: transform 0.35s cubic-bezier(0.2, 0.6, 0.4, 1),
-                box-shadow 0.35s ease,
-                border-color 0.35s ease,
-                background 0.35s ease;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.4s ease,
+                border-color 0.4s ease,
+                background 0.4s ease;
   }
 
   .glass-card-hover:hover {
-    transform: translateY(-10px) scale(1.025);
-    border-color: hsla(var(--glass-border) / 0.6);
-    background: hsla(var(--glass-bg) / 0.55);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.10),
-                0 20px 40px rgba(0, 0, 0, 0.07);
+    transform: translateY(-12px) scale(1.03);
+    border-color: hsla(var(--primary) / 0.4);
+    background: hsla(var(--glass-bg) / 0.65);
+    box-shadow: 0 20px 40px hsl(var(--primary) / 0.15),
+                0 30px 60px rgba(0, 0, 0, 0.12);
+  }
+
+  .skill-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .skill-card:hover {
+    transform: translateX(8px) scale(1.02);
+    background: hsla(var(--accent) / 0.6);
+    border-color: hsl(var(--primary) / 0.5);
+  }
+
+  .project-card {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsla(var(--primary) / 0.1), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .project-card:hover::before {
+    left: 100%;
+  }
+
+  .project-card:hover {
+    transform: translateY(-16px) scale(1.04);
+    box-shadow: 0 25px 50px hsl(var(--primary) / 0.2),
+                0 35px 70px rgba(0, 0, 0, 0.15);
+    border-color: hsl(var(--primary) / 0.6);
+  }
+
+  .btn-hover {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+  }
+
+  .btn-hover:hover::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  .btn-hover:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 25px hsl(var(--primary) / 0.4);
   }
 }

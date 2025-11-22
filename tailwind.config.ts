@@ -68,85 +68,125 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		keyframes: {
-  			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
-  			},
-  			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
-  			},
-  			'fade-up': {
-  				from: {
-  					opacity: '0',
-  					transform: 'translateY(20px)'
-  				},
-  				to: {
-  					opacity: '1',
-  					transform: 'translateY(0)'
-  				}
-  			},
-  			'fade-in': {
-  				from: {
-  					opacity: '0'
-  				},
-  				to: {
-  					opacity: '1'
-  				}
-  			},
-  			shine: {
-  				'0%': {
-  					transform: 'translateX(-60%) rotate(25deg)'
-  				},
-  				'50%': {
-  					transform: 'translateX(10%) rotate(25deg)'
-  				},
-  				'100%': {
-  					transform: 'translateX(-60%) rotate(25deg)'
-  				}
-  			},
-  			typing: {
-  				from: {
-  					width: '0'
-  				},
-  				to: {
-  					width: '100%'
-  				}
-  			},
-  			blink: {
-  				'50%': {
-  					borderColor: 'transparent'
-  				}
-  			},
-  			'fade-card': {
-  				from: {
-  					opacity: '0',
-  					transform: 'translateY(25px)'
-  				},
-  				to: {
-  					opacity: '1',
-  					transform: 'translateY(0)'
-  				}
-  			}
-  		},
-  		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out',
-  			'fade-up': 'fade-up 0.7s ease',
-  			'fade-in': 'fade-in 0.8s ease-in-out',
-  			shine: 'shine 4s infinite ease-in-out',
-  			typing: 'typing 3s steps(30), blink 0.75s step-end infinite',
-  			'fade-card': 'fade-card 0.8s ease forwards'
-  		},
+		keyframes: {
+			'accordion-down': {
+				from: {
+					height: '0'
+				},
+				to: {
+					height: 'var(--radix-accordion-content-height)'
+				}
+			},
+			'accordion-up': {
+				from: {
+					height: 'var(--radix-accordion-content-height)'
+				},
+				to: {
+					height: '0'
+				}
+			},
+			'fade-up': {
+				from: {
+					opacity: '0',
+					transform: 'translateY(20px)'
+				},
+				to: {
+					opacity: '1',
+					transform: 'translateY(0)'
+				}
+			},
+			'fade-in': {
+				from: {
+					opacity: '0'
+				},
+				to: {
+					opacity: '1'
+				}
+			},
+			shine: {
+				'0%': {
+					transform: 'translateX(-60%) rotate(25deg)'
+				},
+				'50%': {
+					transform: 'translateX(10%) rotate(25deg)'
+				},
+				'100%': {
+					transform: 'translateX(-60%) rotate(25deg)'
+				}
+			},
+			typing: {
+				from: {
+					width: '0'
+				},
+				to: {
+					width: '100%'
+				}
+			},
+			blink: {
+				'50%': {
+					borderColor: 'transparent'
+				}
+			},
+			'fade-card': {
+				from: {
+					opacity: '0',
+					transform: 'translateY(25px)'
+				},
+				to: {
+					opacity: '1',
+					transform: 'translateY(0)'
+				}
+			},
+			'slide-in-left': {
+				from: {
+					opacity: '0',
+					transform: 'translateX(-30px)'
+				},
+				to: {
+					opacity: '1',
+					transform: 'translateX(0)'
+				}
+			},
+			'slide-in-right': {
+				from: {
+					opacity: '0',
+					transform: 'translateX(30px)'
+				},
+				to: {
+					opacity: '1',
+					transform: 'translateX(0)'
+				}
+			},
+			float: {
+				'0%, 100%': {
+					transform: 'translateY(0)'
+				},
+				'50%': {
+					transform: 'translateY(-10px)'
+				}
+			},
+			pulse: {
+				'0%, 100%': {
+					opacity: '1'
+				},
+				'50%': {
+					opacity: '0.5'
+				}
+			}
+		},
+		animation: {
+			'accordion-down': 'accordion-down 0.2s ease-out',
+			'accordion-up': 'accordion-up 0.2s ease-out',
+			'fade-up': 'fade-up 0.7s ease',
+			'fade-in': 'fade-in 0.8s ease-in-out',
+			shine: 'shine 4s infinite ease-in-out',
+			typing: 'typing 3s steps(30), blink 0.75s step-end infinite',
+			'fade-card': 'fade-card 0.8s ease forwards',
+			'slide-in-left': 'slide-in-left 0.6s ease-out',
+			'slide-in-right': 'slide-in-right 0.6s ease-out',
+			float: 'float 3s ease-in-out infinite',
+			pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+		},
   		fontFamily: {
   			sans: [
   				'Roboto',
