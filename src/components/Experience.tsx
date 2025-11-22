@@ -1,0 +1,64 @@
+const Experience = () => {
+  const experiences = [
+    {
+      company: "Infinity Shipping Services",
+      location: "Karachi, Pakistan",
+      role: "Customer Service & Data Support Assistant",
+      duration: "May 2021 – Aug 2021",
+      responsibilities: [
+        "Delivered multi-channel customer support while resolving inquiries and service issues efficiently.",
+        "Used Microsoft Excel to monitor service request trends, escalate recurring issues, and support process improvements.",
+        "Organized and maintained structured customer data to enhance workflow and reporting accuracy.",
+        "Contributed to weekly team reports analyzing customer feedback and performance metrics.",
+      ],
+    },
+    {
+      company: "Rewterz",
+      location: "Pakistan",
+      role: "Data Analyst Intern (Cybersecurity)",
+      duration: "2024",
+      responsibilities: [
+        "Built predictive models using Python + SQL for cybersecurity threat detection.",
+        "Automated data ingestion & cleaning pipelines improving data accuracy by 22%.",
+        "Developed dashboards to uncover key security risk factors and trends.",
+        "Supported cybersecurity analysis workflows involving structured threat data.",
+      ],
+    },
+  ];
+
+  return (
+    <section id="experience" className="py-24 px-6">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-4xl md:text-5xl font-black mb-4 text-foreground pb-4 border-b-4 border-border animate-fade-up">
+          💼 Experience
+        </h2>
+
+        <div className="mt-12 space-y-8">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="bg-card rounded-[18px] p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-card"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
+              <div className="mb-2">
+                <h3 className="text-2xl font-black text-primary mb-1">{exp.role}</h3>
+                <p className="text-xl font-semibold text-foreground">{exp.company} – {exp.location}</p>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">{exp.duration}</p>
+              <ul className="space-y-2">
+                {exp.responsibilities.map((resp, idx) => (
+                  <li key={idx} className="text-base leading-relaxed flex items-start gap-3">
+                    <span className="text-primary font-bold mt-1">•</span>
+                    <span>{resp}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
