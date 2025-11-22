@@ -76,61 +76,61 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-black mb-4 text-foreground pb-4 border-b-4 border-border animate-fade-up">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-foreground pb-4 border-b-4 border-border animate-fade-up">
           📬 Contact Me
         </h2>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-8">
+        <div className="mt-8 sm:mt-12 grid md:grid-cols-2 gap-6 sm:gap-8">
           {/* Contact Info */}
-          <div className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card">
-            <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+          <div className="glass-card glass-card-hover rounded-[22px] p-6 sm:p-8 shadow-xl animate-fade-card">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Get in Touch</h3>
             
-            <div className="space-y-6">
-              <div className="flex items-center gap-4 transition-transform hover:translate-x-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20">
-                  <Mail className="w-6 h-6 text-primary" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center gap-3 sm:gap-4 transition-transform hover:translate-x-2">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20 flex-shrink-0">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="font-semibold">Email</p>
+                <div className="min-w-0">
+                  <p className="font-semibold text-sm sm:text-base">Email</p>
                   <a
                     href="mailto:a.wasayfaizan@hotmail.com"
-                    className="text-primary hover:underline"
+                    className="text-primary hover:underline text-sm sm:text-base break-all"
                   >
                     a.wasayfaizan@hotmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 transition-transform hover:translate-x-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20">
-                  <Linkedin className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-3 sm:gap-4 transition-transform hover:translate-x-2">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20 flex-shrink-0">
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="font-semibold">LinkedIn</p>
+                <div className="min-w-0">
+                  <p className="font-semibold text-sm sm:text-base">LinkedIn</p>
                   <a
                     href="https://linkedin.com/in/wasayfaizan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline"
+                    className="text-primary hover:underline text-sm sm:text-base break-all"
                   >
                     linkedin.com/in/wasayfaizan
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 transition-transform hover:translate-x-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20">
-                  <Github className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-3 sm:gap-4 transition-transform hover:translate-x-2">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-primary/20 flex-shrink-0">
+                  <Github className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="font-semibold">GitHub</p>
+                <div className="min-w-0">
+                  <p className="font-semibold text-sm sm:text-base">GitHub</p>
                   <a
                     href="https://github.com/wasayfaizan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline"
+                    className="text-primary hover:underline text-sm sm:text-base break-all"
                   >
                     github.com/wasayfaizan
                   </a>
@@ -138,15 +138,15 @@ const Contact = () => {
               </div>
             </div>
 
-            <p className="mt-8 text-muted-foreground">
+            <p className="mt-6 sm:mt-8 text-sm sm:text-base text-muted-foreground">
               ✨ Thanks for visiting my portfolio! Feel free to reach out for collaborations,
               opportunities, or just to connect.
             </p>
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card" style={{ animationDelay: "0.1s" }}>
-            <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+          <div className="glass-card glass-card-hover rounded-[22px] p-6 sm:p-8 shadow-xl animate-fade-card" style={{ animationDelay: "0.1s" }}>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Input
@@ -183,7 +183,7 @@ const Contact = () => {
               </div>
               <Button
                 type="submit"
-                className="w-full font-bold bg-gradient-to-r from-primary to-primary-dark btn-hover"
+                className="w-full font-bold bg-gradient-to-r from-primary to-primary-dark btn-hover text-sm sm:text-base"
                 size="lg"
                 disabled={isSubmitting}
               >
