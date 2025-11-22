@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Download, Mail } from "lucide-react";
-
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const fullText = "Data Science • Machine Learning • Deep Learning • AI";
-
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -18,16 +16,12 @@ const Hero = () => {
     }, 80);
     return () => clearInterval(timer);
   }, []);
-
   const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section
-      id="hero"
-      className="min-h-screen flex items-center justify-center pt-20 px-6 animate-fade-in"
-    >
+  return <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-6 animate-fade-in">
       <div className="container mx-auto max-w-6xl">
         <div className="relative bg-gradient-to-br from-primary to-primary-dark rounded-[25px] p-12 md:p-20 shadow-2xl overflow-hidden">
           {/* Shine overlay effect */}
@@ -36,8 +30,9 @@ const Hero = () => {
           </div>
 
           <div className="relative z-10 text-white">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 drop-shadow-lg">
-              👋 Hi, I'm <span className="text-white">Abdul Wasay</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 drop-shadow-lg">👋 Hi, I'm Abdul Wasay Faizan
+
+            <span className="text-white">Abdul Wasay</span>
             </h1>
             
             <div className="h-12 md:h-16 mb-6">
@@ -51,21 +46,15 @@ const Hero = () => {
               Machine Learning, Deep Learning, and Applied Mathematics.
             </p>
 
-            <div className="flex flex-wrap gap-4 animate-fade-card opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
-              <Button
-                size="lg"
-                variant="secondary"
-                className="font-bold btn-hover shadow-lg"
-              >
+            <div className="flex flex-wrap gap-4 animate-fade-card opacity-0" style={{
+            animationDelay: '0.8s',
+            animationFillMode: 'forwards'
+          }}>
+              <Button size="lg" variant="secondary" className="font-bold btn-hover shadow-lg">
                 <Download className="mr-2" />
                 Download Resume
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={scrollToContact}
-                className="font-bold bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white btn-hover shadow-lg"
-              >
+              <Button size="lg" variant="outline" onClick={scrollToContact} className="font-bold bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white btn-hover shadow-lg">
                 <Mail className="mr-2" />
                 Contact Me
               </Button>
@@ -73,8 +62,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
