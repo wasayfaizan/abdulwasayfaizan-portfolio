@@ -36,22 +36,22 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-6 bg-muted/30">
+    <section id="projects" className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-black mb-4 text-foreground pb-4 border-b-4 border-border animate-fade-up">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-foreground pb-4 border-b-4 border-border animate-fade-up">
           📂 Featured Projects
         </h2>
 
-        <div className="mt-12 grid gap-6">
+        <div className="mt-8 sm:mt-12 grid gap-4 sm:gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass-card project-card rounded-[22px] p-8 shadow-xl animate-fade-card border-t-4 border-primary/20"
+              className="glass-card project-card rounded-[22px] p-6 sm:p-8 shadow-xl animate-fade-card border-t-4 border-primary/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <h3 className="text-2xl font-bold mb-3 text-foreground transition-colors hover:text-primary">{project.title}</h3>
-              <p className="text-base mb-4 leading-relaxed text-muted-foreground">{project.description}</p>
-              <p className="text-sm font-semibold mb-6 text-primary">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-foreground transition-colors hover:text-primary">{project.title}</h3>
+              <p className="text-sm sm:text-base mb-3 sm:mb-4 leading-relaxed text-muted-foreground">{project.description}</p>
+              <p className="text-xs sm:text-sm font-semibold mb-4 sm:mb-6 text-primary">
                 <span className="font-bold">Tech:</span> {project.tech}
               </p>
               <Button
