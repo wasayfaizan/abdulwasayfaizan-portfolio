@@ -41,7 +41,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("hero")}
             className="text-2xl font-black bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent"
           >
-            Abdul Wasay
+            Abdul Wasay Faizan
           </button>
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
