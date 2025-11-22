@@ -103,7 +103,7 @@ export default {
   					opacity: '1'
   				}
   			},
-  			'shine': {
+  			shine: {
   				'0%': {
   					transform: 'translateX(-60%) rotate(25deg)'
   				},
@@ -114,7 +114,7 @@ export default {
   					transform: 'translateX(-60%) rotate(25deg)'
   				}
   			},
-  			'typing': {
+  			typing: {
   				from: {
   					width: '0'
   				},
@@ -122,7 +122,7 @@ export default {
   					width: '100%'
   				}
   			},
-  			'blink': {
+  			blink: {
   				'50%': {
   					borderColor: 'transparent'
   				}
@@ -143,26 +143,25 @@ export default {
   			'accordion-up': 'accordion-up 0.2s ease-out',
   			'fade-up': 'fade-up 0.7s ease',
   			'fade-in': 'fade-in 0.8s ease-in-out',
-  			'shine': 'shine 4s infinite ease-in-out',
-  			'typing': 'typing 3s steps(30), blink 0.75s step-end infinite',
+  			shine: 'shine 4s infinite ease-in-out',
+  			typing: 'typing 3s steps(30), blink 0.75s step-end infinite',
   			'fade-card': 'fade-card 0.8s ease forwards'
   		},
   		fontFamily: {
   			sans: [
-  				'Work Sans',
+  				'Roboto',
   				'ui-sans-serif',
   				'system-ui',
   				'-apple-system',
   				'BlinkMacSystemFont',
   				'Segoe UI',
-  				'Roboto',
   				'Helvetica Neue',
   				'Arial',
   				'Noto Sans',
   				'sans-serif'
   			],
   			serif: [
-  				'Lora',
+  				'Libre Caslon Text',
   				'ui-serif',
   				'Georgia',
   				'Cambria',
@@ -171,7 +170,7 @@ export default {
   				'serif'
   			],
   			mono: [
-  				'Inconsolata',
+  				'Roboto Mono',
   				'ui-monospace',
   				'SFMono-Regular',
   				'Menlo',
