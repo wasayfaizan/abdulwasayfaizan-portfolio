@@ -37,18 +37,18 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-card rounded-[18px] p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-card"
+              className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card border-l-4 border-primary"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="mb-2">
-                <h3 className="text-2xl font-black text-primary mb-1">{exp.role}</h3>
+                <h3 className="text-2xl font-black text-primary mb-1 transition-all hover:translate-x-2">{exp.role}</h3>
                 <p className="text-xl font-semibold text-foreground">{exp.company} – {exp.location}</p>
               </div>
               <p className="text-sm text-muted-foreground mb-4">{exp.duration}</p>
               <ul className="space-y-2">
                 {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="text-base leading-relaxed flex items-start gap-3">
-                    <span className="text-primary font-bold mt-1">•</span>
+                  <li key={idx} className="text-base leading-relaxed flex items-start gap-3 transition-all hover:translate-x-2">
+                    <span className="text-primary font-bold mt-1 animate-pulse">•</span>
                     <span>{resp}</span>
                   </li>
                 ))}

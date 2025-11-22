@@ -19,14 +19,15 @@ const Courses = () => {
           🎓 Courses & Certifications
         </h2>
 
-        <div className="mt-12 glass-card glass-card-hover rounded-[22px] p-8 md:p-12 shadow-xl animate-fade-card">
+        <div className="mt-12 glass-card glass-card-hover rounded-[22px] p-8 md:p-12 shadow-xl animate-fade-card border-l-4 border-accent-foreground">
           <ul className="space-y-4">
             {courses.map((course, index) => (
               <li
                 key={index}
-                className="flex items-start gap-4 text-lg transition-transform hover:translate-x-2 duration-300"
+                className="flex items-start gap-4 text-lg transition-all hover:translate-x-3 hover:text-primary duration-300 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <GraduationCap className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <GraduationCap className="w-6 h-6 text-primary flex-shrink-0 mt-1 transition-transform hover:scale-125 hover:rotate-12" />
                 <span>{course}</span>
               </li>
             ))}

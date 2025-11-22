@@ -46,17 +46,17 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass-card glass-card-hover rounded-[22px] p-8 shadow-xl animate-fade-card"
+              className="glass-card project-card rounded-[22px] p-8 shadow-xl animate-fade-card border-t-4 border-primary/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <h3 className="text-2xl font-bold mb-3 text-foreground">{project.title}</h3>
+              <h3 className="text-2xl font-bold mb-3 text-foreground transition-colors hover:text-primary">{project.title}</h3>
               <p className="text-base mb-4 leading-relaxed text-muted-foreground">{project.description}</p>
               <p className="text-sm font-semibold mb-6 text-primary">
                 <span className="font-bold">Tech:</span> {project.tech}
               </p>
               <Button
                 asChild
-                className="font-bold bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg transition-all hover:scale-105"
+                className="font-bold bg-gradient-to-r from-primary to-primary-dark btn-hover"
               >
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 w-4 h-4" />

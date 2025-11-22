@@ -51,11 +51,11 @@ const Hero = () => {
               Machine Learning, Deep Learning, and Applied Mathematics.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-fade-card opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
               <Button
                 size="lg"
                 variant="secondary"
-                className="font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="font-bold btn-hover shadow-lg"
               >
                 <Download className="mr-2" />
                 Download Resume
@@ -64,7 +64,7 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 onClick={scrollToContact}
-                className="font-bold bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="font-bold bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white btn-hover shadow-lg"
               >
                 <Mail className="mr-2" />
                 Contact Me
