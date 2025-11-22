@@ -26,7 +26,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Sending contact email from:", name, email);
 
-    // Send notification to portfolio owner
+    // Send notification to portfolio owner (using verified email)
     const notificationResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -35,7 +35,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "Portfolio Contact <onboarding@resend.dev>",
-        to: ["a.wasayfaizan@gmail.com"],
+        to: ["a.wasayfaizan@hotmail.com"], // Must match your Resend registered email
         subject: `New Portfolio Contact from ${name}`,
         html: `
           <h2>New Contact Form Submission</h2>
@@ -43,6 +43,8 @@ const handler = async (req: Request): Promise<Response> => {
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Message:</strong></p>
           <p>${message.replace(/\n/g, '<br>')}</p>
+          <br>
+          <p><em>Note: To reply, email them at ${email}</em></p>
         `,
       }),
     });
@@ -53,43 +55,12 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const notificationData = await notificationResponse.json();
-    console.log("Notification email sent:", notificationData);
-
-    // Send confirmation to sender
-    const confirmationResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${RESEND_API_KEY}`,
-      },
-      body: JSON.stringify({
-        from: "Abdul Wasay <onboarding@resend.dev>",
-        to: [email],
-        subject: "Thanks for reaching out!",
-        html: `
-          <h1>Thank you for contacting me, ${name}!</h1>
-          <p>I've received your message and will get back to you as soon as possible.</p>
-          <p><strong>Your message:</strong></p>
-          <p>${message.replace(/\n/g, '<br>')}</p>
-          <br>
-          <p>Best regards,<br>Abdul Wasay</p>
-        `,
-      }),
-    });
-
-    if (!confirmationResponse.ok) {
-      const error = await confirmationResponse.text();
-      console.error("Failed to send confirmation:", error);
-      // Don't throw - notification was sent successfully
-    } else {
-      const confirmationData = await confirmationResponse.json();
-      console.log("Confirmation email sent:", confirmationData);
-    }
+    console.log("Notification email sent successfully:", notificationData);
 
     return new Response(
       JSON.stringify({ 
         success: true,
-        message: "Emails sent successfully"
+        message: "Email sent successfully"
       }),
       {
         status: 200,
