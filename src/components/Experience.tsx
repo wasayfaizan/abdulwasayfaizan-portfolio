@@ -16,7 +16,7 @@ const Experience = () => {
       company: "Rewterz",
       location: "Pakistan",
       role: "Data Analyst Intern",
-      duration: "2024",
+      duration: "May 2022 - Aug 2022",
       responsibilities: [
         "Built predictive models using Python + SQL for cybersecurity threat detection.",
         "Automated data ingestion & cleaning pipelines improving data accuracy by 22%.",
