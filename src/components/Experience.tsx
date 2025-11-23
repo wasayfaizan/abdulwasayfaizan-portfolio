@@ -15,7 +15,7 @@ const Experience = () => {
     {
       company: "Rewterz",
       location: "Pakistan",
-      role: "Data Analyst Intern (Cybersecurity)",
+      role: "Data Analyst Intern",
       duration: "2024",
       responsibilities: [
         "Built predictive models using Python + SQL for cybersecurity threat detection.",
@@ -41,13 +41,20 @@ const Experience = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="mb-2">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black text-primary mb-1 transition-all hover:translate-x-2">{exp.role}</h3>
-                <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground">{exp.company} – {exp.location}</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-black text-primary mb-1 transition-all hover:translate-x-2">
+                  {exp.role}
+                </h3>
+                <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground">
+                  {exp.company} – {exp.location}
+                </p>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">{exp.duration}</p>
               <ul className="space-y-2">
                 {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="text-sm sm:text-base leading-relaxed flex items-start gap-2 sm:gap-3 transition-all hover:translate-x-2">
+                  <li
+                    key={idx}
+                    className="text-sm sm:text-base leading-relaxed flex items-start gap-2 sm:gap-3 transition-all hover:translate-x-2"
+                  >
                     <span className="text-primary font-bold mt-1 animate-pulse">•</span>
                     <span>{resp}</span>
                   </li>
