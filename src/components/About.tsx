@@ -8,10 +8,10 @@ const About = () => {
 
         <div className="mt-8 sm:mt-12 glass-card glass-card-hover rounded-[22px] p-6 sm:p-8 md:p-12 shadow-xl animate-fade-card">
           <p className="text-base sm:text-lg leading-relaxed mb-6">
-            I'm a <span className="font-bold text-primary">5th-year Computer Science student</span> at{" "}
+            I'm a <span className="font-bold text-primary">Final Year Computer Science student</span> at{" "}
             <span className="font-bold">York University</span> with a minor in Applied Mathematics.
           </p>
-          
+
           <p className="text-base sm:text-lg leading-relaxed mb-8">
             I specialize in building Machine Learning models, Deep Learning systems, and Data Analysis pipelines.
           </p>
