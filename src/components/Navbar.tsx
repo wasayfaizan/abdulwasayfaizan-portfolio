@@ -24,10 +24,10 @@ const Navbar = () => {
   const navItems = [
     { id: "hero", label: "Home" },
     { id: "about", label: "About" },
+    { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "courses", label: "Courses" },
     { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
   ];
