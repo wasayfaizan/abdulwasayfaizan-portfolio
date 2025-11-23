@@ -5,7 +5,7 @@ const Courses = () => {
     "Python Data Analysis (Udemy)",
     "MySQL Certificate (Udemy)",
     "Google Data Analytics",
-    "Machine Learning A-Z",
+    "Machine Learning",
     "Deep Learning Specialization",
     "Computer Vision (Udemy)",
     "Power BI Certification",
