@@ -1,73 +1,175 @@
-# Welcome to your Lovable project
+<h1 align="center">🌐 Abdul Wasay Faizan — Portfolio Website</h1>
 
-## Project info
+<p align="center">
+  <a href="https://abdulwasayfaizan.com" target="_blank">
+    <img src="https://img.shields.io/badge/Website-Live-orange?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/wasayfaizan" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github" />
+  </a>
+</p>
 
-**URL**: https://lovable.dev/projects/f09a0e35-32a7-4b16-9f51-cbaded48622d
+<p align="center">
+  A modern, animated, and fully responsive personal portfolio built with 
+  <b>React, TypeScript, Vite, and Tailwind CSS</b>.
+</p>
 
-## How can I edit this code?
+<hr/>
 
-There are several ways of editing your application.
+<h2>🎯 Project Overview</h2>
 
-**Use Lovable**
+<p>
+This is my personal portfolio website designed to showcase my skills and work in 
+<b>Machine Learning, Data Science, AI, and Software Development</b>.  
+I am a <b>5th-year Computer Science student at York University</b>, minoring in Applied Mathematics.  
+This website serves as a professional hub for recruiters, hiring managers, and collaborators.
+</p>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f09a0e35-32a7-4b16-9f51-cbaded48622d) and start prompting.
+<hr/>
 
-Changes made via Lovable will be committed automatically to this repo.
+<h2>🛠️ Tech Stack</h2>
 
-**Use your preferred IDE**
+<ul>
+  <li><b>Frontend Framework:</b> React 18 (TypeScript)</li>
+  <li><b>Build Tool:</b> Vite</li>
+  <li><b>Styling:</b> Tailwind CSS + Custom Design System</li>
+  <li><b>UI Components:</b> Shadcn/ui Library</li>
+  <li><b>Forms:</b> React Hook Form + Zod Validation</li>
+  <li><b>Routing:</b> React Router DOM</li>
+  <li><b>Animations:</b> Custom Tailwind keyframes</li>
+</ul>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+<hr/>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<h2>✨ Key Features</h2>
 
-Follow these steps:
+<ul>
+  <li>📱 Fully responsive design (mobile-first)</li>
+  <li>📌 Sticky navigation bar with smooth scroll</li>
+  <li>💫 Interactive animations:</li>
+  <ul>
+    <li>Typewriter effect for job roles</li>
+    <li>Floating shine effect on hero section</li>
+    <li>Scroll-based fade-in animations</li>
+    <li>Hover interactions & micro-animations</li>
+  </ul>
+  <li>🧊 Modern glassmorphism cards</li>
+  <li>📄 Resume download button</li>
+  <li>📬 Functional contact form (client-side validated)</li>
+  <li>🔍 SEO optimized with semantic layout</li>
+</ul>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<hr/>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+<h2>📑 Sections Included</h2>
 
-# Step 3: Install the necessary dependencies.
-npm i
+<ul>
+  <li><b>Hero Section:</b> Gradient hero with animated intro</li>
+  <li><b>About Me:</b> Personal background & interests</li>
+  <li><b>Skills:</b> Programming, ML, DS, Databases, Cloud</li>
+  <li><b>Courses:</b> Python, MySQL, Google Analytics, ML, DL, Power BI</li>
+  <li><b>Projects:</b> 5 feature-rich project cards with GitHub links</li>
+  <li><b>Experience:</b> Infinity Shipping Services, Rewterz Cybersecurity</li>
+  <li><b>Resume Section:</b> Download + preview</li>
+  <li><b>Contact Section:</b> Contact form</li>
+</ul>
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+<hr/>
 
-**Edit a file directly in GitHub**
+<h2>🎨 Design System</h2>
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+<ul>
+  <li><b>Primary Gradient:</b> Orange / Amber (#ea580c → #f97316)</li>
+  <li><b>Font:</b> Inter — clean modern typography</li>
+  <li><b>Rounded Corners:</b> 22px across UI</li>
+  <li><b>Effects:</b> Minimal shadows, glassmorphism, soft gradients</li>
+  <li><b>Animations:</b> Smooth transitions & custom keyframes</li>
+</ul>
 
-**Use GitHub Codespaces**
+<hr/>
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+<h2>🚀 Performance</h2>
 
-## What technologies are used for this project?
+<ul>
+  <li>⚡ <b>Vite</b> for instant dev server + lightning-fast builds</li>
+  <li>🧩 Component-based architecture</li>
+  <li>🛌 Lazy-loaded assets when possible</li>
+  <li>📦 Minified & tree-shaken production bundle</li>
+</ul>
 
-This project is built with:
+<hr/>
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+<h2>📧 Contact Form</h2>
 
-## How can I deploy this project?
+<ul>
+  <li>Client-side validation using <b>Zod</b></li>
+  <li>Error handling / success messages</li>
+  <li>No backend dependency inside this repository</li>
+</ul>
 
-Simply open [Lovable](https://lovable.dev/projects/f09a0e35-32a7-4b16-9f51-cbaded48622d) and click on Share -> Publish.
+<hr/>
 
-## Can I connect a custom domain to my Lovable project?
+<h2>🔧 Development Standards</h2>
 
-Yes, you can!
+<ul>
+  <li>Type-safe development with <b>TypeScript</b></li>
+  <li>Reusable UI components</li>
+  <li>Folder-driven architecture</li>
+  <li>ESLint + Prettier formatting</li>
+</ul>
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+<hr/>
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+<h2>📱 Responsive Breakpoints</h2>
+
+<ul>
+  <li><b>Mobile:</b> < 640px</li>
+  <li><b>Tablet:</b> 640px – 1024px</li>
+  <li><b>Desktop:</b> 1024px+</li>
+</ul>
+
+<hr/>
+
+<h2>📂 Folder Structure</h2>
+
+<pre>
+📁 src/
+│── components/
+│── pages/
+│── sections/
+│── hooks/
+│── context/
+│── styles/
+│── data/
+│── utils/
+│── App.tsx
+│── main.tsx
+
+📁 public/
+📄 index.html
+📄 tailwind.config.js
+📄 package.json
+</pre>
+
+<hr/>
+
+<h2>🔗 Live Website</h2>
+
+<p>
+<a href="https://abdulwasayfaizan.com" target="_blank">
+👉 Click here to view the live portfolio
+</a>
+</p>
+
+<hr/>
+
+<h2>📬 Contact</h2>
+
+<p><b>Name:</b> Abdul Wasay Faizan</p>
+<p><b>Email:</b> <a href="mailto:a.wasayfaizan@hotmail.com">a.wasayfaizan@hotmail.com</a></p>
+<p><b>GitHub:</b> <a href="https://github.com/wasayfaizan" target="_blank">github.com/wasayfaizan</a></p>
+<p><b>Portfolio:</b> <a href="https://abdulwasayfaizan.com" target="_blank">abdulwasayfaizan.com</a></p>
+
+<hr/>
+
+<h3 align="center">⭐ If you found this project helpful, please give it a star!</h3>
